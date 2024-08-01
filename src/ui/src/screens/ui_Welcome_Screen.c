@@ -50,7 +50,7 @@ void ui_Welcome_Screen_screen_init(void)
     lv_obj_set_x(ui_Description, 6);
     lv_obj_set_y(ui_Description, 20);
     lv_obj_set_align(ui_Description, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Description, "Prototype of a wearable device for navigation disabled people.");
+    lv_label_set_text(ui_Description, "Simply navigate to your destination by saying your destination address");
     lv_obj_set_style_text_color(ui_Description, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Description, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui_Description, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);

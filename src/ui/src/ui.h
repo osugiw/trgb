@@ -25,9 +25,10 @@ extern "C" {
 #include "ui_helpers.h"
 #include "ui_events.h"
 
-#include "ui_img_manager.h"
 void Navigation_Animation(lv_obj_t * TargetObject, int delay);
 void FadeOutRecordBT_Animation(lv_obj_t * TargetObject, int delay);
+void ArcAnimated_Animation(lv_obj_t * TargetObject, int delay);
+void RollingEmo_Animation(lv_obj_t * TargetObject, int delay);
 // SCREEN: ui_Splash_Screen
 void ui_Splash_Screen_screen_init(void);
 void ui_event_Splash_Screen(lv_event_t * e);
@@ -80,17 +81,16 @@ extern lv_obj_t * ui_RecordBT;
 extern lv_obj_t * ui_Label6;
 // SCREEN: ui_Navigation_Screen
 void ui_Navigation_Screen_screen_init(void);
+void ui_event_Navigation_Screen(lv_event_t * e);
 extern lv_obj_t * ui_Navigation_Screen;
-void ui_event_Navigator(lv_event_t * e);
 extern lv_obj_t * ui_Navigator;
 extern lv_obj_t * ui_ArcDesign;
+extern lv_obj_t * ui_Label8;
 extern lv_obj_t * ui____initial_actions0;
 
 
-extern lv_img_dsc_t ui_img_logo_png;   // assets/Logo.png
-void ui_img_logo_png_load();
-extern lv_img_dsc_t ui_img_navigation_png;   // assets/navigation.png
-void ui_img_navigation_png_load();
+LV_IMG_DECLARE(ui_img_logo_png);    // assets/Logo.png
+LV_IMG_DECLARE(ui_img_navigation_png);    // assets/navigation.png
 
 
 

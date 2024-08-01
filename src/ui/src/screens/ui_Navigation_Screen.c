@@ -16,25 +16,26 @@ void ui_Navigation_Screen_screen_init(void)
     lv_img_set_src(ui_Navigator, &ui_img_navigation_png);
     lv_obj_set_width(ui_Navigator, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Navigator, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Navigator, 5);
-    lv_obj_set_y(ui_Navigator, 15);
+    lv_obj_set_x(ui_Navigator, 0);
+    lv_obj_set_y(ui_Navigator, -10);
     lv_obj_set_align(ui_Navigator, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Navigator, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Navigator, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_img_set_zoom(ui_Navigator, 75);
 
     ui_ArcDesign = lv_arc_create(ui_Navigation_Screen);
-    lv_obj_set_width(ui_ArcDesign, 460);
-    lv_obj_set_height(ui_ArcDesign, 500);
-    lv_obj_set_x(ui_ArcDesign, 0);
-    lv_obj_set_y(ui_ArcDesign, 20);
+    lv_obj_set_width(ui_ArcDesign, 400);
+    lv_obj_set_height(ui_ArcDesign, 400);
     lv_obj_set_align(ui_ArcDesign, LV_ALIGN_CENTER);
     lv_obj_clear_flag(ui_ArcDesign, LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_SCROLL_ELASTIC | LV_OBJ_FLAG_SCROLL_MOMENTUM |
                       LV_OBJ_FLAG_SCROLL_CHAIN);     /// Flags
     lv_obj_set_scrollbar_mode(ui_ArcDesign, LV_SCROLLBAR_MODE_OFF);
     lv_arc_set_value(ui_ArcDesign, 200);
+    lv_arc_set_bg_angles(ui_ArcDesign, 150, 149);
     lv_obj_set_style_arc_color(ui_ArcDesign, lv_color_hex(0x416DB4), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_arc_opa(ui_ArcDesign, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_arc_width(ui_ArcDesign, 10, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_arc_rounded(ui_ArcDesign, true, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_set_style_arc_color(ui_ArcDesign, lv_color_hex(0x416DB4), LV_PART_INDICATOR | LV_STATE_DEFAULT);
     lv_obj_set_style_arc_opa(ui_ArcDesign, 255, LV_PART_INDICATOR | LV_STATE_DEFAULT);
@@ -42,6 +43,17 @@ void ui_Navigation_Screen_screen_init(void)
     lv_obj_set_style_bg_color(ui_ArcDesign, lv_color_hex(0xFFFFFF), LV_PART_KNOB | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_ArcDesign, 0, LV_PART_KNOB | LV_STATE_DEFAULT);
 
-    lv_obj_add_event_cb(ui_Navigator, ui_event_Navigator, LV_EVENT_ALL, NULL);
+    ui_Label8 = lv_label_create(ui_Navigation_Screen);
+    lv_obj_set_width(ui_Label8, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_Label8, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_Label8, 0);
+    lv_obj_set_y(ui_Label8, 110);
+    lv_obj_set_align(ui_Label8, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_Label8, "Follow this direction");
+    lv_obj_set_style_text_color(ui_Label8, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_Label8, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Label8, &lv_font_montserrat_20, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    lv_obj_add_event_cb(ui_Navigation_Screen, ui_event_Navigation_Screen, LV_EVENT_ALL, NULL);
 
 }

@@ -30,7 +30,7 @@ void ui_SettingScreen_screen_init(void)
     lv_obj_set_x(ui_Label1, 0);
     lv_obj_set_y(ui_Label1, -144);
     lv_obj_set_align(ui_Label1, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label1, "Please configure the initial settings before the user uses this device.");
+    lv_label_set_text(ui_Label1, "Please configure before using the device.");
     lv_obj_set_style_text_color(ui_Label1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui_Label1, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);

@@ -21,7 +21,7 @@ void ui_Home_Screen_screen_init(void)
     lv_obj_set_align(ui_Image3, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image3, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image3, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_img_set_zoom(ui_Image3, 50);
+    lv_img_set_zoom(ui_Image3, 75);
 
     ui_Label3 = lv_label_create(ui_Home_Screen);
     lv_obj_set_width(ui_Label3, LV_SIZE_CONTENT);   /// 1

@@ -8,8 +8,6 @@ SET(SOURCES screens/ui_Splash_Screen.c
     components/ui_comp_hook.c
     ui_helpers.c
     ui_events.c
-    ui_img_manager.c
-    fastlz.c
     images/ui_img_logo_png.c
     images/ui_img_navigation_png.c)
 
