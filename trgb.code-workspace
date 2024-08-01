@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"name": "trgb",
+			"path": "."
+		},
+		{
+			"name": "T-RGB-main",
+			"path": "../T-RGB-main"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"functional": "c",
+			"array": "cpp",
+			"deque": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp",
+			"vector": "cpp",
+			"string_view": "cpp",
+			"initializer_list": "cpp"
+		}
+	}
+}

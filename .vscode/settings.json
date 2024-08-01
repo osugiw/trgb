@@ -1,0 +1,7 @@
+{
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "C:\\Users\\KDS-LTP-0415\\.espressif\\tools\\openocd-esp32\\v0.11.0-esp32-20220411/openocd-esp32/share/openocd/scripts",
+        "IDF_CCACHE_ENABLE": "1"
+    },
+    "cmake.sourceDirectory": "D:/Self-Learning/ESP32/trgb/.pio/libdeps/esp32-s3-devkitc-1/lvgl"
+}
